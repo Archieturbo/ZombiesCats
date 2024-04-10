@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombies & Cats</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+
+    <div class="container">
+        <div id="bilder">
+            <img id="game-image" src="images/fantasy.gif">
+            <p id="platsbeskrivning">Du befinner dig på en mystisk plats... omkring dig lurar en massa Zombies.<br> Ditt
+                uppdrag är att rädda så många katter du kan innan du blir tagen av en Zombie. <br> Lyckas du så är det
+                bra, men misslyckas du så kommer du få leva som en Zombie i all oändlighet..</p>
+            <p id="katter">Hittade katter: <span id="katter-counter">0</span></p>
+            <p id="liv">Återstående liv: <span id="liv-counter">3</span></p>
+
+        </div>
+
+        <div class="spelplan-och-riktning">
+            <div id="riktning">
+                <input type="button" id="start" value="Starta spelet"><br>
+                <input type="button" id="norr" value="N"><br>
+                <input type="button" id="väst" value="V">
+                <input type="button" id="öst" value="Ö"><br>
+                <input type="button" id="syd" value="S">
+            </div>
+            <div id="spelplan"></div>
+        </div>
+    </div>
+    <div id="game-container"></div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
