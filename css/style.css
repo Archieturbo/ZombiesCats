@@ -79,7 +79,11 @@ input:hover {
   font-size: 12px; /* Minska textstorleken på knapparna */
   padding: 8px 16px; /* Justera padding för att passa mindre skärmar */
   margin-bottom: 5px; /* Justera marginalerna mellan knapparna */
+
+}
+
+body{
+  overflow-x: hidden;
 }
 }
   
-}
