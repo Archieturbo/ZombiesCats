@@ -73,14 +73,16 @@ input:hover {
 {
   .container{ flex-direction: column;
   align-items: center;
-  background-size: cover;
+  background-size:cover;
   background-attachment: fixed;
+  background-repeat:no-repeat;
 }
-#riktning input[type="button"] {
-  font-size: 12px; /* Minska textstorleken på knapparna */
-  padding: 8px 16px; /* Justera padding för att passa mindre skärmar */
-  margin-bottom: 5px; /* Justera marginalerna mellan knapparna */
 
+#riktning input[type="button"], #spelplan {
+  font-size: 10px; 
+  padding: 5px 10px; 
+  margin-bottom: 3px; 
+ 
 }
 
 }
