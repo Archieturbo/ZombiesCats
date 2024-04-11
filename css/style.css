@@ -71,6 +71,9 @@ input:hover {
 
 @media(max-width: 600px)
 {
-  .container{ flex-direction: row;}
+  .container{ flex-direction: row;
+  align-items: center;
+  background-size: cover;
+}
   
 }
