@@ -73,7 +73,8 @@ input:hover {
 {
   .container{ flex-direction: column;
   align-items: center;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #riktning input[type="button"] {
   font-size: 12px; /* Minska textstorleken på knapparna */
@@ -82,8 +83,5 @@ input:hover {
 
 }
 
-body{
-  overflow-x: hidden;
-}
 }
   
