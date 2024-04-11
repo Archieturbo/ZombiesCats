@@ -69,11 +69,17 @@ input:hover {
   opacity: 0.7;
 }
 
-@media(max-width: 400px)
+@media(max-width: 600px)
 {
   .container{ flex-direction: column;
   align-items: center;
-  background-size: cover;
+  background-size: 100% 100%;
+}
+#riktning input[type="button"] {
+  font-size: 12px; /* Minska textstorleken på knapparna */
+  padding: 8px 16px; /* Justera padding för att passa mindre skärmar */
+  margin-bottom: 5px; /* Justera marginalerna mellan knapparna */
+}
 }
   
 }
