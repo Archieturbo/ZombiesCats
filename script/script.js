@@ -9,7 +9,7 @@ let katterCounter = 0;
 function startGame() {
     placeImagesOnMap();
     gameStarted = true;
-    playerPosition = Math.floor(Math.random() * 25); // Slumpmässig position för spelaren när spelet startar
+    playerPosition = Math.floor(Math.random() * 25); 
     checkPosition();
     changeImage();
     drawMap();
@@ -151,7 +151,7 @@ function checkPosition() {
             setTimeout(function () {
                 showRestartButton();
                 fetchChuckNorrisJoke();
-            }, 5000);
+            }, 8000);
         }
 
     } else {
@@ -204,6 +204,7 @@ function checkWin() {
         document.getElementById('platsbeskrivning').textContent = "Grattis du har hittat alla katter, nu är det fest!";
         showRestartButton();
     }
+ 
 }
 
 function disableNav()
