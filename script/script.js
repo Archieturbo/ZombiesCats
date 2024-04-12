@@ -151,7 +151,7 @@ function checkPosition() {
             setTimeout(function () {
                 showRestartButton();
                 fetchChuckNorrisJoke();
-            }, 8000);
+            }, 4000);
         }
 
     } else {
@@ -198,7 +198,7 @@ function fetchChuckNorrisJoke() {
 }
 
 function checkWin() {
-    if (katterCounter === 2 && livCounter > 0) {
+    if (katterCounter === 5 && livCounter > 0) {
         gameEnded = true;
         document.getElementById('game-image').src = "images/partycat.gif";
         document.getElementById('platsbeskrivning').textContent = "Grattis du har hittat alla katter, nu är det fest!";
