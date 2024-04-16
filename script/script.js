@@ -172,30 +172,25 @@ function showRestartButton() {
 
 function fetchChuckNorrisJoke() {
     const url = 'https://api.api-ninjas.com/v1/chucknorris';
-    const apiKey = 'MMTe829VUDKb7goClTw07Q==nDIU2HjHQOvinwXP';
+    const apiKey = 'MMTe829VUDKb7goClTw07Q==nDIU2HjHQOvinwXP'
 
-    fetch(url, {
-        method: 'GET',
+    const requestOptions = {
         headers: {
-            'X-Api-Key': apiKey,
-            'Content-Type': 'application/json'
+            'X-Api-Key': apiKey
         }
-    })
-        .then(function (response) {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(function (result) {
+    };
 
+    fetch(url, requestOptions)
+        .then(response => response.json())
+        .then(result => {
             document.getElementById('platsbeskrivning').textContent = result.joke;
             console.log(result.joke);
         })
-        .catch(function (error) {
+        .catch(error => {
             console.error('Error:', error);
         });
 }
+
 
 function checkWin() {
     if (katterCounter === 5 && livCounter > 0) {
